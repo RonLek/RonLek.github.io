@@ -1,4 +1,4 @@
-export { default as Facebook } from "./Facebook";
+export { default as Scholar } from "./Scholar";
 export { default as Github } from "./Github";
 export { default as Linkedin } from "./Linkedin";
 export { default as Medium } from "./Medium";
