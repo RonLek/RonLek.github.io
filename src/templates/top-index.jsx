@@ -62,25 +62,16 @@ export const query = graphql`
             iconName
             imageFileName
           }
-          social {
-            facebook
-            github
-            linkedin
-            medium
-            twitter
-          }
           subheader
-          teamMember {
-            header
-            imageFileName
+          me {
+            content
             social {
-              facebook
+              scholar
               github
               linkedin
               medium
               twitter
             }
-            subheader
           }
           telephone
           termsHref
@@ -104,6 +95,7 @@ export const query = graphql`
 `;
 
 const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } }) => {
+  console.log("Data = ", data);
   const {
     site: {
       siteMetadata: { keywords, description },

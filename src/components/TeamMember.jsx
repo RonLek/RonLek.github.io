@@ -7,8 +7,6 @@ import * as SocialIcons from "components/SocialIcons";
 import "./TeamMember.scss";
 
 const TeamMember = ({
-  imageFileName,
-  imageAlt,
   header,
   subheader,
   social: { twitter, facebook, linkedin, github, medium },
@@ -21,11 +19,11 @@ const TeamMember = ({
 
   return (
     <div className="team-member">
-      <Image
+      {/* <Image
         className="mx-auto circle rounded-circle"
         fileName={imageFileName}
         alt={imageAlt || header || subheader}
-      />
+      /> */}
       <h4>{header}</h4>
       <p className="text-muted">{subheader}</p>
       <div>
@@ -40,9 +38,7 @@ const TeamMember = ({
 };
 
 TeamMember.propTypes = {
-  imageFileName: PropTypes.string.isRequired,
-  imageAlt: PropTypes.string,
-  header: PropTypes.string,
+  header: PropTypes.string.isRequired,
   subheader: PropTypes.string,
   social: PropTypes.shape({
     twitter: PropTypes.string,
@@ -54,8 +50,6 @@ TeamMember.propTypes = {
 };
 
 TeamMember.defaultProps = {
-  imageAlt: null,
-  header: "",
   subheader: "",
   social: {
     twitter: null,
