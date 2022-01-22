@@ -1,4 +1,7 @@
 ---
+header: "Publications"
+anchor: "Publications"
+subheader: ""
 clients: [
   {
     imageFileName: "logos/envato.jpg",

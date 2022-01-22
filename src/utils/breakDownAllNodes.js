@@ -6,6 +6,7 @@ const propFilter = curry((pathList, regex) => pathSatisfies(test(regex), pathLis
  * break down all data retrieved in index.js
  */
 export default function breakDownAllNodes(nodes) {
+  console.log("Nodes = ", nodes);
   const filterByFileName = propFilter(["fields", "fileName"]);
   const filterByDirectoryName = propFilter(["fields", "directoryName"]);
 
