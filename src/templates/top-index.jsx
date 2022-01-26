@@ -34,8 +34,7 @@ export const query = graphql`
         frontmatter {
           brand
           anchor
-          clients {
-            href
+          publications {
             imageFileName
           }
           content

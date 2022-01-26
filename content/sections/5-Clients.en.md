@@ -2,22 +2,12 @@
 header: "Publications"
 anchor: "Publications"
 subheader: ""
-clients: [
+publications: [
   {
-    imageFileName: "logos/envato.jpg",
-    href: "#!"
+    imageFileName: "publications/fastv2c-handnet.png",
   },
   {
-    imageFileName: "logos/designmodo.jpg",
-    href: "#!"
+    imageFileName: "publications/mpc.png",
   },
-  {
-    imageFileName: "logos/themeforest.jpg",
-    href: "#!"
-  },
-  {
-    imageFileName: "logos/creative-market.jpg",
-    href: "#!"
-  }
 ]
 ---

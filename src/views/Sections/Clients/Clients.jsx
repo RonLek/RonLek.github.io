@@ -13,7 +13,7 @@ const Clients = ({ className, frontmatter }) => {
     return null;
   }
 
-  const { anchor } = frontmatter;
+  const { anchor, publications } = frontmatter;
 
   return (
     <PageSection className={className} id={anchor}>
@@ -23,10 +23,10 @@ const Clients = ({ className, frontmatter }) => {
             <Card style={{ height: "15rem", width: "40rem" }}>
               <Row style={{ height: "100%" }}>
                 <Col xs={4} className="d-flex align-items-center">
-                  <Card.Img
-                    variant="top"
-                    src="https://ronlek.github.io/img/research/fastv2c-handnet.png"
-                    style={{ height: "80%" }}
+                  <Image
+                    className="ml-3"
+                    fileName={publications[0].imageFileName}
+                    alt={publications[0].imageFileName}
                   />
                 </Col>
                 <Col>
@@ -78,10 +78,10 @@ const Clients = ({ className, frontmatter }) => {
             <Card style={{ height: "15rem", width: "40rem" }}>
               <Row style={{ height: "100%" }}>
                 <Col xs={4} className="d-flex align-items-center">
-                  <Card.Img
-                    variant="top"
-                    src="https://ronlek.github.io/img/research/fastv2c-handnet.png"
-                    style={{ height: "80%" }}
+                  <Image
+                    className="ml-3"
+                    fileName={publications[1].imageFileName}
+                    alt={publications[1].imageFileName}
                   />
                 </Col>
                 <Col>
@@ -136,16 +136,18 @@ const Clients = ({ className, frontmatter }) => {
           </Row>
         </Col>
         <Col lg={4} xs={12}>
-          Hero Section
-          {/* <div className="hand-hero">
+          <div className="hand-hero">
             <Image
               className="mx-auto"
-              style={{ height: "80%" }}
               fileName="publications/hand point cloud.png"
               alt="publications/hand point cloud.png"
             />
-            <p>Voxelized H</p>
-          </div> */}
+            <p>
+              <strong>
+                <i>2D Hand Pose After Voxelization</i>
+              </strong>
+            </p>
+          </div>
         </Col>
       </Row>
     </PageSection>
