@@ -1,0 +1,47 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.gatsby-image-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.hand-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  animation: MoveUpDown 1.5s linear infinite;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  img {
+    height: 25rem;
+    width: auto;
+    position: relative;
+  }
+  div {
+    padding: 0% !important;
+  }
+  p {
+    margin-top: 2rem;
+  }
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+}
+
+p {
+  font-size: medium;
+}

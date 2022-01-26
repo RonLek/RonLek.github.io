@@ -16,7 +16,6 @@ const Me = ({ className, frontmatter }) => {
   const { anchor, header: rootHeader, subheader: rootSubHeader, me } = frontmatter;
   const { twitter, scholar, linkedin, github, medium } = me.social;
 
-  console.log("Me frontmatter: ", frontmatter);
   const twitterPart = twitter ? <SocialIcons.Twitter userName={twitter} /> : null;
   const scholarPart = scholar ? <SocialIcons.Scholar userName={scholar} /> : null;
   const linkedinPart = linkedin ? <SocialIcons.Linkedin userName={linkedin} /> : null;
