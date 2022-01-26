@@ -3,20 +3,24 @@ import PropTypes from "prop-types";
 
 import { Row, Col, Card, Button, Badge, Tooltip, OverlayTrigger, Overlay } from "react-bootstrap";
 import PageSection from "components/PageSection";
+import SectionHeader from "components/SectionHeader";
 import Image from "components/Image";
-import "./Clients.scss";
+import "./Publications.scss";
 
-const Clients = ({ className, frontmatter }) => {
+const Publications = ({ className, frontmatter }) => {
   const [showI2CTTooltip, setShowI2CTTooltip] = useState(false);
   const tooltipTarget = useRef(null);
   if (!frontmatter) {
     return null;
   }
 
-  const { anchor, publications } = frontmatter;
+  const { anchor, publications, header: rootHeader, subheader: rootSubHeader } = frontmatter;
 
   return (
     <PageSection className={className} id={anchor}>
+      <Row>
+        <SectionHeader header={rootHeader} subheader={rootSubHeader} />
+      </Row>
       <Row>
         <Col lg={8} xs={12}>
           <Row className="my-5 mx-1">
@@ -154,14 +158,14 @@ const Clients = ({ className, frontmatter }) => {
   );
 };
 
-Clients.propTypes = {
+Publications.propTypes = {
   className: PropTypes.string,
   frontmatter: PropTypes.object,
 };
 
-Clients.defaultProps = {
+Publications.defaultProps = {
   className: null,
   frontmatter: null,
 };
 
-export default Clients;
+export default Publications;
