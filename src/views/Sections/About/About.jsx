@@ -18,7 +18,7 @@ const About = ({ className, frontmatter }) => {
 
   return (
     <PageSection className={className} id={anchor}>
-      <Row>
+      <Row style={{ "margin-bottom": "70px" }}>
         <SectionHeader header={rootHeader} subheader={rootSubHeader} />
       </Row>
       <Row>

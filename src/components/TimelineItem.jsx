@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import clsx from "clsx";
 
 import Image from "components/Image";
-
 import "./TimelineItem.scss";
 
 const TimelineItem = ({
@@ -23,6 +22,7 @@ const TimelineItem = ({
   return (
     <li className={liClassName}>
       <div className="timeline-image">
+        {/* TODO: Remove unnecessary h4 on top of Start! */}
         {imageContent || (
           <Image
             className="rounded-circle img-fluid"
@@ -37,7 +37,7 @@ const TimelineItem = ({
           {subheaderPart}
         </div>
         <div className="timeline-body">
-          <p className="text-muted">{content}</p>
+          <p className="text-muted-custom" dangerouslySetInnerHTML={{ __html: content }} />
         </div>
       </div>
     </li>

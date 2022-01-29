@@ -48,7 +48,7 @@ const Publications = ({ className, frontmatter }) => {
                         ICICC-2020
                       </Badge>
                     </OverlayTrigger>
-                    <Card.Title style={{ "font-size": "1.25rem" }}>
+                    <Card.Title style={{ fontSize: "1.25rem" }}>
                       FastV2C-HandNet : Fast Voxel to Coordinate Hand Pose Estimation with 3D
                       Convolutional Neural Networks
                     </Card.Title>
@@ -103,7 +103,7 @@ const Publications = ({ className, frontmatter }) => {
                         I2CT-2022
                       </Badge>
                     </OverlayTrigger>
-                    <Card.Title style={{ "font-size": "1.25rem" }}>
+                    <Card.Title style={{ fontSize: "1.25rem" }}>
                       Modeling and Predicting the COVID-19 Trajectory in India
                     </Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">
