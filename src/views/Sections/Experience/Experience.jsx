@@ -7,9 +7,9 @@ import SectionHeader from "components/SectionHeader";
 import PageSection from "components/PageSection";
 import nl2br from "utils/nl2br";
 
-import "./About.scss";
+import "./Experience.scss";
 
-const About = ({ className, frontmatter }) => {
+const Experience = ({ className, frontmatter }) => {
   if (!frontmatter) {
     return null;
   }
@@ -18,7 +18,7 @@ const About = ({ className, frontmatter }) => {
 
   return (
     <PageSection className={className} id={anchor}>
-      <Row>
+      <Row style={{ "margin-bottom": "70px" }}>
         <SectionHeader header={rootHeader} subheader={rootSubHeader} />
       </Row>
       <Row>
@@ -46,14 +46,14 @@ const About = ({ className, frontmatter }) => {
   );
 };
 
-About.propTypes = {
+Experience.propTypes = {
   className: PropTypes.string,
   frontmatter: PropTypes.object,
 };
 
-About.defaultProps = {
+Experience.defaultProps = {
   className: null,
   frontmatter: null,
 };
 
-export default About;
+export default Experience;
