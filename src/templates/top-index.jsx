@@ -45,13 +45,43 @@ export const query = graphql`
           jumpToAnchor
           jumpToAnchorText
           menuText
-          portfolios {
-            content
-            extraInfo
-            header
-            subheader
-            imageFileNameDetail
-            imageFileName
+          projects {
+            visai {
+              imageFileName
+              imageFileNameDetail
+              header
+              subheader
+              content
+              date
+              links {
+                name
+                url
+              }
+            }
+            aandw {
+              imageFileName
+              imageFileNameDetail
+              header
+              subheader
+              content
+              date
+              links {
+                name
+                url
+              }
+            }
+            software {
+              imageFileName
+              imageFileNameDetail
+              header
+              subheader
+              content
+              date
+              links {
+                name
+                url
+              }
+            }
           }
           privacyHref
           privacyText
