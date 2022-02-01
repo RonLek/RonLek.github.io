@@ -38,6 +38,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       social: Social
       services: [Service]
       me: Me
+      projects: Project
     }`,
     `type Me {
       social: Social
@@ -56,6 +57,24 @@ exports.createSchemaCustomization = ({ actions }) => {
       linkedin: String
       scholar: String
       medium: String
+    }
+    type Project {
+      visai: [ProjectItem]
+      aandw: [ProjectItem]
+      software: [ProjectItem]
+    }
+    type ProjectItem {
+      imageFileName: String
+      imageFileNameDetail: String
+      header: String
+      subheader: String
+      content: String
+      date: String
+      links: [ProjectURL]
+    }
+    type ProjectURL {
+      name: String
+      url: String
     }
     `,
   ];

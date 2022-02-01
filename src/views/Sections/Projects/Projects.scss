@@ -1,0 +1,65 @@
+// Styling for the portfolio section
+.portfolio-section {
+  * {
+    z-index: 2;
+  }
+}
+
+.visaitab {
+  text-align: center;
+  background-color: #ffffff;
+  color: #000 !important;
+  font-weight: bold;
+  width: 100%;
+  &:hover {
+    background-color: #f24b4b !important;
+    color: white !important;
+  }
+  &.active {
+    background-color: #f24b4b !important;
+    color: white !important;
+  }
+}
+
+.aandwtab {
+  text-align: center;
+  background-color: #ffffff;
+  color: #000 !important;
+  font-weight: bold;
+  width: 100%;
+  &:hover {
+    background-color: #f8bb44 !important;
+    color: white !important;
+  }
+  &.active {
+    background-color: #f8bb44 !important;
+    color: white !important;
+  }
+}
+
+.softwaretab {
+  text-align: center;
+  background-color: #ffffff;
+  color: #000 !important;
+  font-weight: bold;
+  width: 100%;
+  &:hover {
+    background-color: #60bfbf !important;
+    color: white !important;
+  }
+  &.active {
+    background-color: #60bfbf !important;
+    color: white !important;
+  }
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.section-heading {
+  margin-bottom: 70px !important;
+}

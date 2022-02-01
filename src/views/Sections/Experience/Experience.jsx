@@ -18,7 +18,7 @@ const Experience = ({ className, frontmatter }) => {
 
   return (
     <PageSection className={className} id={anchor}>
-      <Row style={{ "margin-bottom": "70px" }}>
+      <Row style={{ marginBottom: "70px" }}>
         <SectionHeader header={rootHeader} subheader={rootSubHeader} />
       </Row>
       <Row>
