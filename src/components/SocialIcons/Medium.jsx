@@ -3,12 +3,18 @@ import PropTypes from "prop-types";
 
 import CircleIcon from "components/CircleIcon";
 
-const Medium = ({ userName }) => (
-  <CircleIcon href={`https://medium.com/@${userName}`} iconName="MediumIcon" />
+const Medium = ({ userName, link }) => (
+  <CircleIcon href={link || `https://medium.com/@${userName}`} iconName="MediumIcon" />
 );
 
+Medium.defaultProps = {
+  userName: null,
+  link: null,
+};
+
 Medium.propTypes = {
-  userName: PropTypes.string.isRequired,
+  userName: PropTypes.string,
+  link: PropTypes.string,
 };
 
 export default Medium;

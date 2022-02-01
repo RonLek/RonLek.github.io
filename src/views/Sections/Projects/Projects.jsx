@@ -20,13 +20,8 @@ const projectGrid = (projects) => {
         subheader={project.subheader}
         content={project.content}
         imageFileNameDetail={project.imageFileNameDetail}
-        // extraInfo={
-        //   <ul>
-        //     {project.extraInfo.map((ei) => (
-        //       <li key={ei}>{ei}</li>
-        //     ))}
-        //   </ul>
-        // }
+        date={project.date}
+        links={project.links}
       />,
     );
 
@@ -35,6 +30,7 @@ const projectGrid = (projects) => {
       columns = [];
     }
   });
+  rows.push(columns);
   return rows;
 };
 
@@ -51,7 +47,6 @@ const Projects = ({ className, frontmatter }) => {
 
   return (
     <PageSection className={clsx("portfolio-section", className)} id={anchor}>
-      {/* {console.log("within return", visaiProjects)} */}
       <Row>
         <SectionHeader header={rootHeader} subheader={rootSubHeader} />
       </Row>

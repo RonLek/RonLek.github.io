@@ -154,7 +154,7 @@ The model implements <strong>Logistic Regression, Linear Discriminant Analysis, 
   {
     imageFileName: "projects/iiitpuneapp.png",
     imageFileNameDetail: "projects/iiitpuneapp.png",
-    header: "IIIT Pune APp",
+    header: "IIIT Pune App",
     subheader: "IIIT Pune in your pocket!",
     content: "Built the Institute Android App which has features like Live Mess Menu, Issuing book by just scanning the book barcode straight from your phone( <strong>13 types of 1-D and 2-D barcodes supported</strong> ), knowing what's new at IIIT Pune right from your phone and many other features.<br><br><strong>The App has been made the official App of IIIT Pune and has more than 500 downloads and 200+ 5-star ratings on the Play Store.</strong>",
     date: "September 2017 - August 2018",
@@ -204,13 +204,13 @@ The model implements <strong>Logistic Regression, Linear Discriminant Analysis, 
     header: "C-AWARE",
     subheader: "I'm <s>not</s> a robot",
     content: "Built a Telegram bot that provides:
-<li>
-<ul>Self Diagnosis to check users and predict possible infection to reduce burden on hospitals and medical staff.</ul>
-</ul>Location based official helpline numbers and contacts accessible from any State.</ul>
-<ul>Latest News from verified sources about coronavirus to make everyone aware without creating panic.</ul>
-<ul>Cases, Deaths, Recoveries of 5 Worst Hit and Least Hit countries around the world that change dynamically as new cases are reported from data published by the World Health Organization (WHO).</ul>
-<ul>India Stats about COVID-19 that report the total cases, deaths, recoveries live happening in India from the Ministry of Health and Family Welfare.</ul>
-<ul>Hospital capacities including number of rural and urban hospitals and the number of beds in them based on location of the user so that people can estimate the medical capability of the Nation.</ul></li>",
+<ul>
+<li>Self Diagnosis to check users and predict possible infection to reduce burden on hospitals and medical staff.</li>
+<li>Location based official helpline numbers and contacts accessible from any State.</li>
+<li>Latest News from verified sources about coronavirus to make everyone aware without creating panic.</li>
+<li>Cases, Deaths, Recoveries of 5 Worst Hit and Least Hit countries around the world that change dynamically as new cases are reported from data published by the World Health Organization (WHO).</li>
+<li>India Stats about COVID-19 that report the total cases, deaths, recoveries live happening in India from the Ministry of Health and Family Welfare.</li>
+<li>Hospital capacities including number of rural and urban hospitals and the number of beds in them based on location of the user so that people can estimate the medical capability of the Nation.</li></ul>",
     date: "March 2020",
     links: [
       {

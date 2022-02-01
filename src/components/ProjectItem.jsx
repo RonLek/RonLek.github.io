@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { Col } from "react-bootstrap";
 import Image from "components/Image";
 import Icon from "components/Icon";
-import PortfolioDetailDialog from "components/PortfolioDetailDialog";
+import PortfolioDetailDialog from "components/ProjectDetailDialog";
 
 import "./ProjectItem.scss";
 
@@ -61,6 +61,8 @@ const ProjectItem = ({
         header={header}
         subheader={subheader}
         content={content}
+        date={date}
+        links={links}
       />
     </>
   );
