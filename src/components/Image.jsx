@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 import { StaticQuery, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
+import ALPRGIF from "../../content/assets/images/projects/alpr.gif";
 
 const Image = ({ fileName, alt, ...restProps }) => (
   <StaticQuery
@@ -27,7 +28,10 @@ const Image = ({ fileName, alt, ...restProps }) => (
       if (!image) {
         return null;
       }
-
+      console.log(image);
+      if (!image.node.childImageSharp && image.node.name === "alpr") {
+        return <img alt={image.node.name} src={ALPRGIF} {...restProps} />;
+      }
       const imageData = image.node.childImageSharp.gatsbyImageData;
       return <GatsbyImage alt={alt} image={imageData} {...restProps} />;
     }}

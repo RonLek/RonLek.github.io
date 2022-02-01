@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 
@@ -8,64 +8,79 @@ import ProjectItem from "components/ProjectItem";
 import PageSection from "components/PageSection";
 import "./Projects.scss";
 
+const projectGrid = (projects) => {
+  let columns = [];
+  const rows = [];
+  projects.forEach((project, index) => {
+    columns.push(
+      <ProjectItem
+        key={project.header}
+        imageFileName={project.imageFileName}
+        header={project.header}
+        subheader={project.subheader}
+        content={project.content}
+        imageFileNameDetail={project.imageFileNameDetail}
+        // extraInfo={
+        //   <ul>
+        //     {project.extraInfo.map((ei) => (
+        //       <li key={ei}>{ei}</li>
+        //     ))}
+        //   </ul>
+        // }
+      />,
+    );
+
+    if ((index + 1) % 3 === 0) {
+      rows.push(<Row>{columns}</Row>);
+      columns = [];
+    }
+  });
+  return rows;
+};
+
 const Projects = ({ className, frontmatter }) => {
   if (!frontmatter) {
     return null;
   }
 
   const { anchor, header: rootHeader, subheader: rootSubHeader, projects } = frontmatter;
-  // let columns = [];
-  const rows = [];
 
-  console.log("Projects = ", projects);
-  // portfolios.visai.forEach((portfolio, index) => {
-  //   columns.push(
-  //     <PortfolioItem
-  //       key={portfolio.header}
-  //       imageFileName={portfolio.imageFileName}
-  //       header={portfolio.header}
-  //       subheader={portfolio.subheader}
-  //       content={portfolio.content}
-  //       imageFileNameDetail={portfolio.imageFileNameDetail}
-  //       extraInfo={
-  //         <ul>
-  //           {portfolio.extraInfo.map((ei) => (
-  //             <li key={ei}>{ei}</li>
-  //           ))}
-  //         </ul>
-  //       }
-  //     />,
-  //   );
-
-  //   if ((index + 1) % 3 === 0) {
-  //     rows.push(<Row>{columns}</Row>);
-  //     columns = [];
-  //   }
-  // });
+  const visaiGrid = projectGrid(projects.visai);
+  const aandwGrid = projectGrid(projects.aandw);
+  const softwareGrid = projectGrid(projects.software);
 
   return (
     <PageSection className={clsx("portfolio-section", className)} id={anchor}>
+      {/* {console.log("within return", visaiProjects)} */}
       <Row>
         <SectionHeader header={rootHeader} subheader={rootSubHeader} />
       </Row>
-      <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+      <Tab.Container id="left-tabs-example" defaultActiveKey="visai">
         <Row>
-          <Col sm={2}>
+          <Col md={2} style={{ marginBottom: "50px" }}>
             <Nav variant="pills" className="flex-column">
               <Nav.Item>
-                <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                <Nav.Link className="visaitab" eventKey="visai">
+                  Vision & AI
+                </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                <Nav.Link className="aandwtab" eventKey="aandw">
+                  App and Web
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link className="softwaretab" eventKey="software">
+                  Software
+                </Nav.Link>
               </Nav.Item>
             </Nav>
           </Col>
-          <Col sm={10}>
+          <Col md={10}>
             <Tab.Content>
-              <Tab.Pane eventKey="first">{rows}</Tab.Pane>
-              <Tab.Pane eventKey="second">
-                <h1>Hello World</h1>
-              </Tab.Pane>
+              <Tab.Pane eventKey="visai">{visaiGrid}</Tab.Pane>
+              <Tab.Pane eventKey="aandw">{aandwGrid}</Tab.Pane>
+              <Tab.Pane eventKey="software">{softwareGrid}</Tab.Pane>
             </Tab.Content>
           </Col>
         </Row>

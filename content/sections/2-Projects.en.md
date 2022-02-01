@@ -1,7 +1,7 @@
 ---
 anchor: "Projects"
 header: "Projects"
-subheader: "Lorem ipsum dolor sit amet consectetur."
+subheader: ""
 projects: {
   visai: [{
     imageFileName: "projects/alpr.gif",
@@ -22,7 +22,7 @@ projects: {
     imageFileNameDetail: "projects/animestyletransfer.png",
     header: "Style Transfer for Anime Colorization",
     subheader: "あなたの中の怠惰な漫画家のために",
-    content: "Working on implementing a style transfer system using a U-Net and an AC-GAN architecture to color anime. Referring paper by Zhang et. al.",
+    content: 'Working on implementing a style transfer system using a U-Net and an AC-GAN architecture to color anime. Referring <a href="https://arxiv.org/abs/1706.03319" target="_blank" noopener>paper</a> by Zhang et. al.',
     date: "March 2020",
     links: [
       {
@@ -36,7 +36,7 @@ projects: {
     imageFileNameDetail: "projects/imagecaptioning.png",
     header: "Image Captioning",
     subheader: "An image is worth a thousand words. Literally!",
-    content: "Built an image captioning system based on the Show and Tell paper by Vinalys et. al. as part of the Minor Project under Dr. Bhupendra Singh and Dr. Tanmoy Hazra.",
+    content: 'Built an image captioning system based on the <a href="https://arxiv.org/abs/1411.4555" target="_blank" noopener>Show and Tell</a> paper by Vinalys et. al. as part of the Minor Project under Dr. Bhupendra Singh and Dr. Tanmoy Hazra.',
     date: "November 2019",
     links: [
       {
@@ -50,7 +50,7 @@ projects: {
     imageFileNameDetail: "projects/facedetection.jpg",
     header: "Face Detection",
     subheader: "Detect any face and its features!",
-    content: "Built a model using OpenCV that can detect faces and face features like eyes and the area containing eyes and nose.",
+    content: 'Built a model using <strong>OpenCV</strong> that can detect faces and face features like eyes and the area containing eyes and nose.',
     date: "January 2019",
     links: [
       {
@@ -79,8 +79,7 @@ projects: {
     header: "Iris Flower Classification.",
     subheader: "Classifying Iris Flowers based on UCI Dataset",
     content: "Built a model that can classify Iris Flowers based on 4 parameters - sepal length, sepal width, petal length, petal width.
-The model implements Logistic Regression, Linear Discriminant Analysis, Decision Tree Classifier, Gaussian Naive Bayes and Support Vector Machine on the dataset and chooses the most optimum.
-Dataset used -> UCI Iris Dataset",
+The model implements <strong>Logistic Regression, Linear Discriminant Analysis, Decision Tree Classifier, Gaussian Naive Bayes and Support Vector Machine</strong> on the dataset and chooses the most optimum.<br><br>Dataset used: <strong>UCI Iris Dataset</strong>",
     date: "October 2018",
     links: [
       {
@@ -135,8 +134,8 @@ Dataset used -> UCI Iris Dataset",
     ]
   },
   {
-    imageFileName: "projects/faceLook.png",
-    imageFileNameDetail: "projects/faceLook.png",
+    imageFileName: "projects/facelook.png",
+    imageFileNameDetail: "projects/facelook.png",
     header: "FaceLook",
     subheader: "Identify and Report Missing Persons!",
     content: "Trained a <strong>TfLite</strong> model to recognize missing persons and used it in an app. On recognizing a person successfully the app also captures the GPS coordinates of the place where the person was scanned and sends it to the authorities. Achieved Top 1% out of 2500 participants in the Missing Hackathon on HackerEarth.",

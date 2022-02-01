@@ -29,7 +29,7 @@ const ProjectItem = ({
 
   return (
     <>
-      <Col sm={4} className="portfolio-item">
+      <Col md={4} className="portfolio-item">
         <a
           role="button"
           tabIndex={-1}
