@@ -124,7 +124,6 @@ export const query = graphql`
 `;
 
 const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } }) => {
-  console.log("Data = ", data);
   const {
     site: {
       siteMetadata: { keywords, description },
