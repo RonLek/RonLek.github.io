@@ -28,7 +28,6 @@ const Image = ({ fileName, alt, ...restProps }) => (
       if (!image) {
         return null;
       }
-      console.log(image);
       if (!image.node.childImageSharp && image.node.name === "alpr") {
         return <img alt={image.node.name} src={ALPRGIF} {...restProps} />;
       }

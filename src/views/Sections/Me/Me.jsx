@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { Row, Col } from "react-bootstrap";
-// import TeamMember from "components/TeamMember";
 import SectionHeader from "components/SectionHeader";
 import PageSection from "components/PageSection";
 import * as SocialIcons from "components/SocialIcons";
@@ -26,16 +25,9 @@ const Me = ({ className, frontmatter }) => {
       <Row>
         <SectionHeader header={rootHeader} subheader={rootSubHeader} />
       </Row>
-      {/* <Row>
-        {teamMember.map(({ header, ...tmProps }) => (
-          <Col sm={4} key={header}>
-            <TeamMember header={header} {...tmProps} />
-          </Col>
-        ))}
-      </Row> */}
       <Row>
         <Col lg={12} className="mx-auto my-5 text-center">
-          <p className="text-dark">{me.content}</p>
+          <p className="text-dark" dangerouslySetInnerHTML={{ __html: me.content }} />
         </Col>
       </Row>
       <div className="d-flex justify-content-center">
