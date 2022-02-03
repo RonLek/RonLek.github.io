@@ -85,11 +85,11 @@ export const query = graphql`
           }
           privacyHref
           privacyText
-          services {
-            content
-            header
-            iconName
-            imageFileName
+          education {
+            school
+            degree
+            score
+            highlights
           }
           subheader
           me {
