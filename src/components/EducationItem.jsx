@@ -6,7 +6,7 @@ import "./EducationItem.scss";
 const EducationItem = ({ school, degree, score, highlights }) => {
   return (
     <Card className="education-card">
-      <Card.Body>
+      <Card.Body className="education-card-body">
         <Card.Title as="h5">{school}</Card.Title>
         <Card.Text>
           {degree}

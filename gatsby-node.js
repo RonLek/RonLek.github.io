@@ -39,6 +39,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       education: [Education]
       me: Me
       projects: Project
+      skills: Skills
     }`,
     `type Me {
       social: Social
@@ -75,6 +76,11 @@ exports.createSchemaCustomization = ({ actions }) => {
     type ProjectURL {
       name: String
       url: String
+    }
+    type Skills {
+      languages: [String]
+      platforms: [String]
+      landf: [String]
     }
     `,
   ];

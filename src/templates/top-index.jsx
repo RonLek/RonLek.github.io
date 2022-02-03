@@ -102,6 +102,11 @@ export const query = graphql`
               twitter
             }
           }
+          skills {
+            languages
+            platforms
+            landf
+          }
           telephone
           termsHref
           termsText
