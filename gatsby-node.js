@@ -36,7 +36,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       jumpToAnchor: String
       jumpToAnchorText: String
       social: Social
-      services: [Service]
+      education: [Education]
       me: Me
       projects: Project
     }`,
@@ -44,11 +44,11 @@ exports.createSchemaCustomization = ({ actions }) => {
       social: Social
       content: String
     }`,
-    `type Service {
-      iconName: String
-      imageFileName: String
-      header: String
-      content: String
+    `type Education {
+      school: String
+      degree: String
+      score: String
+      highlights: [String]
     }`,
     `
     type Social {
