@@ -1,7 +1,7 @@
 {
   "name": "rohan-lekhwani-gatsby-website",
   "description": "gatsby version of website with i18n support",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "author": "RonLek",
   "bugs": {
     "url": "https://github.com/RonLek/RonLek.github.io/issues"
@@ -68,8 +68,6 @@
     "RonLek",
     "gatsby",
     "gatsbyjs",
-    "landing page",
-    "landing",
     "i18n",
     "eslint",
     "bootstrap"
