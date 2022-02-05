@@ -139,6 +139,7 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
     );
   }
 
+  console.log("anchors = ", anchors);
   return (
     <>
       <SEO lang={langKey} title="Top" keywords={keywords} description={description} />

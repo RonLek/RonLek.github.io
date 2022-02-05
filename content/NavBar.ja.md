@@ -1,4 +1,4 @@
 ---
-brand: "Start Bootstrap"
+brand: "Rohan Lekhwani"
 menuText: "メニュー "
 ---
