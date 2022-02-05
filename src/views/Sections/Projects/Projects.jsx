@@ -26,7 +26,7 @@ const projectGrid = (projects) => {
     );
 
     if ((index + 1) % 3 === 0) {
-      rows.push(<Row>{columns}</Row>);
+      rows.push(<Row key={rows.length}>{columns}</Row>);
       columns = [];
     }
   });

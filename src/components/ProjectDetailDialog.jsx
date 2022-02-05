@@ -53,11 +53,16 @@ const ProjectDetailDialog = ({
               <br />
               <h6>Links</h6>
               {links.map((link) => {
-                if (link.name === "Github") return <SocialIcons.Github link={link.url} />;
-                if (link.name === "Presentation") return <SocialIcons.Slides link={link.url} />;
-                if (link.name === "Medium") return <SocialIcons.Medium link={link.url} />;
-                if (link.name === "Live") return <SocialIcons.Live link={link.url} />;
-                if (link.name === "YouTube") return <SocialIcons.YouTube link={link.url} />;
+                if (link.name === "Github")
+                  return <SocialIcons.Github key={`link-${link.name}`} link={link.url} />;
+                if (link.name === "Presentation")
+                  return <SocialIcons.Slides key={`link-${link.name}`} link={link.url} />;
+                if (link.name === "Medium")
+                  return <SocialIcons.Medium key={`link-${link.name}`} link={link.url} />;
+                if (link.name === "Live")
+                  return <SocialIcons.Live key={`link-${link.name}`} link={link.url} />;
+                if (link.name === "YouTube")
+                  return <SocialIcons.YouTube key={`link-${link.name}`} link={link.url} />;
                 return <SocialIcons.Link key={`link-${link.name}`} link={link.url} />;
               })}
             </div>
