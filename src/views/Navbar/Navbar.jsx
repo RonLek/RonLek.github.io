@@ -56,8 +56,12 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
             {anchors.map((anchor) => (
               <NavItem key={anchor} to={anchor} onClick={closeMenu} />
             ))}
+            <a href="https://google.com" className="nav-link" target="_blank" rel="noreferrer">
+              Resume
+            </a>
           </Nav>
-          {extraItems}
+          {/* Language Selector Part */}
+          {/* {extraItems} */}
         </Navbar.Collapse>
       </Container>
     </Navbar>

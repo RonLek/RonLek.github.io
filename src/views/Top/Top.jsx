@@ -39,7 +39,7 @@ const Top = ({ frontmatter }) => {
           },
           size: "cover",
         },
-        fpsLimit: 120,
+        fpsLimit: 50,
         interactivity: {
           events: {
             onClick: {
