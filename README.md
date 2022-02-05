@@ -4,7 +4,12 @@
   Rohan Lekhwani
 </h1>
 
-![example event parameter](https://github.com/RonLek/RonLek.github.io/actions/workflows/deploy.yml/badge.svg?event=push)
+<div align="center">
+
+![Deploy Status](https://github.com/RonLek/RonLek.github.io/actions/workflows/deploy.yml/badge.svg?event=push)
+![CodeQl](https://github.com/RonLek/RonLek.github.io/actions/workflows/codeql-analysis.yml/badge.svg)
+
+</div>
 
 ## Note
 
