@@ -47,3 +47,9 @@
 p {
   font-size: medium;
 }
+
+@media (max-width: 992px) {
+  .publicationRow {
+    flex-direction: column-reverse;
+  }
+}
