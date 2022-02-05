@@ -35,14 +35,14 @@ EducationItem.propTypes = {
   school: PropTypes.string,
   degree: PropTypes.string,
   score: PropTypes.string,
-  highlights: PropTypes.string,
+  highlights: PropTypes.array,
 };
 
 EducationItem.defaultProps = {
   school: "",
   degree: "",
   score: "",
-  highlights: "",
+  highlights: [],
 };
 
 export default EducationItem;

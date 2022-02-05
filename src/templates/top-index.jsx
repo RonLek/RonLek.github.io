@@ -40,7 +40,6 @@ export const query = graphql`
           content
           copyright
           header
-          email
           imageFileName
           jumpToAnchor
           jumpToAnchorText
@@ -83,8 +82,6 @@ export const query = graphql`
               }
             }
           }
-          privacyHref
-          privacyText
           education {
             school
             degree
@@ -107,9 +104,6 @@ export const query = graphql`
             platforms
             landf
           }
-          telephone
-          termsHref
-          termsText
           title
           timeline {
             content
