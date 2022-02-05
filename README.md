@@ -1,5 +1,5 @@
 <h1 align="center">
-  Gatsyby startbootstrap-agency
+  Gatsby startbootstrap-agency
 </h1>
 
 gatsby version of startbootstrap-agency with i18n supported.

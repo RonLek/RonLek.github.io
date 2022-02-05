@@ -1,22 +1,25 @@
 ---
-anchor: "サービス"
-header: "サービス"
-subheader: "あなたは偶然断然その持通りについて事のためにまかり出ですた。"
-services: [
+anchor: "Education"
+header: "Education"
+subheader: ""
+education: [
   {
-    iconName: "ShoppingCartIcon",
-    header: "ECサイト",
-    content: "あなたは偶然断然その持通りについて事のためにまかり出ですた。もう元来を説明心はとうとうこのお話しないななどでいて行くたでは滅亡しましでて、再びにはなったうないです。"
+    school: "Indian Institute of Information Technology Pune",
+    degree: "B.Tech. in Computer Science and Engineering",
+    score: "CGPA - 9.33",
+    highlights: ["Department Rank 1"]
   },
   {
-    iconName: "LaptopIcon",
-    header: "レスポンシブデザイン",
-    content: "あなたは偶然断然その持通りについて事のためにまかり出ですた。もう元来を説明心はとうとうこのお話しないななどでいて行くたでは滅亡しましでて、再びにはなったうないです。"
+    school: "Army Public School Kirkee, Pune",
+    degree: "Intermediary Education",
+    score: "Percentage - 86.2",
+    highlights: ["Physics Topper"]
   },
   {
-    iconName: "LockIcon",
-    header: "ウェブセキュリティ",
-    content: "あなたは偶然断然その持通りについて事のためにまかり出ですた。もう元来を説明心はとうとうこのお話しないななどでいて行くたでは滅亡しましでて、再びにはなったうないです。"
+    school: "Hutchings High School, Pune",
+    degree: "Matriculation",
+    score: "Percentage - 95.17",
+    highlights: ["4th in school overall", "English Topper"]
   }
 ]
 ---

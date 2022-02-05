@@ -15,8 +15,6 @@ const Skills = ({ className, frontmatter }) => {
 
   const { anchor, header: rootHeader, subheader: rootSubHeader, skills } = frontmatter;
 
-  console.log("skills", skills);
-
   return (
     <PageSection className={className} id={anchor}>
       <Row>

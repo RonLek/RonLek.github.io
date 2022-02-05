@@ -1,38 +1,15 @@
 ---
-anchor: "チーム"
-header: "チーム"
-subheader: "あなたは偶然断然その持通りについて事のためにまかり出ですた。"
-content: "あなたは偶然断然その持通りについて事のためにまかり出ですた。もう元来を説明心はとうとうこのお話しないななどでいて行くたでは滅亡しましでて、再びにはなったうないです。"
-teamMember: [
-  {
-    imageFileName: "team/1.jpg",
-    header: "Kay Garland",
-    subheader: "Lead Designer",
-    social: {
-      twitter: "#",
-      facebook: "#",
-      linkedin: "#"
-    }
-  },
-  {
-    imageFileName: "team/2.jpg",
-    header: "Larry Parker",
-    subheader: "Lead Marketer",
-    social: {
-      twitter: "#",
-      facebook: "#",
-      medium: "#"
-    }
-  },
-  {
-    imageFileName: "team/3.jpg",
-    header: "Diana Pertersen",
-    subheader: "Lead Developer",
-    social: {
-      twitter: "#",
-      facebook: "#",
-      medium: "#"
-    }
-  },
-]
+anchor: "About"
+header: "About"
+subheader: ""
+me: {
+  content: "I am a software engineer at <strong>Gojek</strong>. I love to learn new things and build cool stuff. I am an <strong>avid coder, amateur writer,</strong> and a full-time foodie. Welcome to my website.",
+  social: {
+    github: "RonLek",
+    twitter: "rohanlekhwani",
+    linkedin: "rohanlekhwani",
+    scholar: "RAaISaQAAAAJ",
+    medium: "rohanlekhwani",
+  }
+}
 ---

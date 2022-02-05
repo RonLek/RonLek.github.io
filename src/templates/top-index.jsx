@@ -40,7 +40,6 @@ export const query = graphql`
           content
           copyright
           header
-          imageFileName
           jumpToAnchor
           jumpToAnchorText
           menuText
@@ -119,6 +118,13 @@ export const query = graphql`
         }
       }
     }
+    allFile(filter: { extension: { eq: "pdf" } }) {
+      edges {
+        node {
+          publicURL
+        }
+      }
+    }
   }
 `;
 
@@ -128,6 +134,7 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
       siteMetadata: { keywords, description },
     },
     allMarkdownRemark: { nodes },
+    allFile: { edges },
   } = data;
 
   const { topNode, navBarNode, anchors, footerNode, sectionsNodes } = breakDownAllNodes(nodes);
@@ -139,7 +146,6 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
     );
   }
 
-  console.log("anchors = ", anchors);
   return (
     <>
       <SEO lang={langKey} title="Top" keywords={keywords} description={description} />
@@ -147,6 +153,7 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
         anchors={["Publications", "Projects", "Experience"]}
         frontmatter={navBarNode.frontmatter}
         extraItems={langSelectorPart}
+        resumeLink={edges ? edges[0].node.publicURL : null}
       />
       <Top frontmatter={topNode.frontmatter} />
       {
