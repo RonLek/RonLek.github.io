@@ -1,28 +1,6 @@
 <h1 align="center">
-  Gatsby startbootstrap-agency
+  Rohan Lekhwani
 </h1>
-
-gatsby version of startbootstrap-agency with i18n supported.
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0a8bfd50-2bd5-43a6-bacd-51e5efc1f248/deploy-status)](https://app.netlify.com/sites/gatsby-startbootstrap-agency/deploys)
-
-__This project is migrated to Gatsby@v4__
-- check the latest Gatsby@v3 version [here](https://github.com/thundermiracle/gatsby-startbootstrap-agency/tree/gatsby-3).
-- check the latest Gatsby@v2 version [here](https://github.com/thundermiracle/gatsby-startbootstrap-agency/tree/gatsby-2.0).
-
-## Preview
-
-![startbootstrap-agency](https://github.com/thundermiracle/gatsby-startbootstrap-agency/blob/screenshot/screenshot/startbootstrap-agency.png)
-
-## Sample page
-
-[https://gatsby-startbootstrap-agency.netlify.app](https://gatsby-startbootstrap-agency.netlify.app)
-
-[https://gatsbystartbootstrapagency1.gatsbyjs.io/](https://gatsbystartbootstrapagency1.gatsbyjs.io/)
-
-[※ startbootstrap-agency (Original Version)](https://github.com/BlackrockDigital/startbootstrap-agency)
-
-[※ startbootstrap-agency-webpack(Webpack Version)](https://github.com/thundermiracle/startbootstrap-agency-webpack/)
 
 ## Note
 
@@ -39,30 +17,6 @@ npm install -g gatsby-cli
 
 gatsby new my-blog-folder https://github.com/thundermiracle/gatsby-startbootstrap-agency
 ```
-
-## Why Gatsby Version
-
-1. > Original version is great but have to load too many unnecessary contents from CDN including all components in `bootstrap`, all solid & brands icons in `fontawesome`. That dramatically slows down the FCP(first contentful paint) in 3G environment.
-
-    Using Gatsby could tree-shaking unnecessary code, optimizing images which make first contentful paint very fast.
-
-1. > Implementation of i18n in original version is not easy and will make a lot of redundant code.
-
-    i18n is really easy in Gatsby and i18n is more maintainable.
-
-## Comparison of Original, Webpack and Gatsby version
-
-### Gatsby Version
-
-![Gatsby lighthouse](https://github.com/thundermiracle/gatsby-startbootstrap-agency/blob/screenshot/screenshot/lighthouse_gatsby.png)
-
-### Webpack Version
-
-![Webpack lighthouse](https://github.com/thundermiracle/gatsby-startbootstrap-agency/blob/screenshot/screenshot/lighthouse_webpack.png)
-
-### Original Version
-
-![Original lighthouse](https://github.com/thundermiracle/gatsby-startbootstrap-agency/blob/screenshot/screenshot/lighthouse_original.png)
 
 ## Basic Configuration
 
