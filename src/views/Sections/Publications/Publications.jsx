@@ -24,7 +24,7 @@ const Publications = ({ className, frontmatter }) => {
       <Row className="publicationRow">
         <Col lg={8} xs={12}>
           <Row className="my-5 mx-1">
-            <Card style={{ height: "15rem", width: "40rem" }}>
+            <Card style={{ height: "auto", width: "100%", padding: "20px" }}>
               <Row style={{ height: "100%" }}>
                 <Col xs={4} className="d-flex align-items-center">
                   <Image
@@ -48,7 +48,7 @@ const Publications = ({ className, frontmatter }) => {
                         ICICC-2020
                       </Badge>
                     </OverlayTrigger>
-                    <Card.Title style={{ fontSize: "1.25rem" }}>
+                    <Card.Title style={{ fontSize: "1rem" }}>
                       FastV2C-HandNet : Fast Voxel to Coordinate Hand Pose Estimation with 3D
                       Convolutional Neural Networks
                     </Card.Title>
@@ -79,7 +79,7 @@ const Publications = ({ className, frontmatter }) => {
             </Card>
           </Row>
           <Row className="my-5 mx-1">
-            <Card style={{ height: "15rem", width: "40rem" }}>
+            <Card style={{ height: "auto", width: "100%", padding: "20px" }}>
               <Row style={{ height: "100%" }}>
                 <Col xs={4} className="d-flex align-items-center">
                   <Image
@@ -103,7 +103,7 @@ const Publications = ({ className, frontmatter }) => {
                         I2CT-2022
                       </Badge>
                     </OverlayTrigger>
-                    <Card.Title style={{ fontSize: "1.25rem" }}>
+                    <Card.Title style={{ fontSize: "1rem" }}>
                       Modeling and Predicting the COVID-19 Trajectory in India
                     </Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">
@@ -143,7 +143,7 @@ const Publications = ({ className, frontmatter }) => {
           <div className="hand-hero">
             <Image
               className="mx-auto"
-              style={{ height: "22rem", width: "15rem" }}
+              style={{ height: "25rem", width: "20rem" }}
               fileName="publications/hand point cloud.png"
               alt="publications/hand point cloud.png"
             />
