@@ -11,7 +11,7 @@ const EducationItem = ({ school, degree, score, highlights }) => {
         <Card.Text>
           {degree}
           <br />
-          <p className="text-muted">{score}</p>
+          <span className="text-muted">{score}</span>
         </Card.Text>
         <div className="d-flex">
           {highlights.map((highlight) => (

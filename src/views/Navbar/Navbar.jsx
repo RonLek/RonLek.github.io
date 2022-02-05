@@ -12,7 +12,7 @@ import NavItem from "components/NavItem";
 
 import "./Navbar.scss";
 
-const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
+const MyNavbar = ({ anchors, frontmatter, extraItems, resumeLink }) => {
   const { brand, menuText } = frontmatter;
 
   const handleScrollToTop = useSmoothScrollTo(0);
@@ -56,8 +56,12 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
             {anchors.map((anchor) => (
               <NavItem key={anchor} to={anchor} onClick={closeMenu} />
             ))}
+            <a href={resumeLink} className="nav-link" target="_blank" rel="noreferrer">
+              Resume
+            </a>
           </Nav>
-          {extraItems}
+          {/* Language Selector Part */}
+          {/* {extraItems} */}
         </Navbar.Collapse>
       </Container>
     </Navbar>
@@ -68,12 +72,14 @@ MyNavbar.propTypes = {
   anchors: PropTypes.arrayOf(PropTypes.string),
   frontmatter: PropTypes.object,
   extraItems: PropTypes.any,
+  resumeLink: PropTypes.string,
 };
 
 MyNavbar.defaultProps = {
   anchors: [],
   frontmatter: {},
   extraItems: null,
+  resumeLink: "",
 };
 
 export default MyNavbar;

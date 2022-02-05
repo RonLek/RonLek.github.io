@@ -1,38 +1,49 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Button } from "react-bootstrap";
+// import { Button } from "react-bootstrap";
 import useSmoothScrollTo from "hooks/useSmoothScrollTo";
 import Particles from "react-tsparticles";
 import Background from "../../../content/assets/images/background.png";
 import BackgroundSmall from "../../../content/assets/images/backgroundsmall.png";
+
+const isBrowser = typeof window !== "undefined";
 
 const Top = ({ frontmatter }) => {
   if (!frontmatter) {
     return null;
   }
 
-  const { header, subheader, imageFileName, jumpToAnchor, jumpToAnchorText } = frontmatter;
+  const { jumpToAnchor, jumpToAnchorText } = frontmatter;
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const scrollToSection = useSmoothScrollTo(jumpToAnchor);
+  let backgroundImage = "";
 
-  let extraInfoPart;
-  if (jumpToAnchor && jumpToAnchorText) {
-    extraInfoPart = (
-      <Button size="xl" variant="primary" className="text-uppercase" onClick={scrollToSection}>
-        {jumpToAnchorText}
-      </Button>
-    );
+  if (isBrowser) {
+    backgroundImage = `url(${window.screen.width > 700 ? Background : BackgroundSmall})`;
   }
+
+  // let extraInfoPart;
+  // if (jumpToAnchor && jumpToAnchorText) {
+  //   extraInfoPart = (
+  //     <Button size="xl" variant="primary" className="text-uppercase" onClick={scrollToSection}>
+  //       {jumpToAnchorText}
+  //     </Button>
+  //   );
+  // }
 
   return (
     <Particles
       height="100vh"
       id="tsparticles"
       options={{
+        motion: {
+          disable: true,
+          reduce: true,
+        },
         fullScreen: { enable: false },
         background: {
-          image: `url(${window.screen.width > 700 ? Background : BackgroundSmall})`,
+          image: backgroundImage,
           position: "center",
           color: {
             value: "#000000",
@@ -53,38 +64,30 @@ const Top = ({ frontmatter }) => {
             resize: true,
           },
           modes: {
-            grab: {
-              distance: 100,
-              line_linked: {
-                opacity: 1,
-              },
-            },
             bubble: {
-              distance: 200,
-              size: 80,
-              duration: 0.4,
+              distance: 400,
+              duration: 2,
+              opacity: 0.8,
+              size: 40,
+            },
+            push: {
+              quantity: 4,
             },
             repulse: {
               distance: 200,
               duration: 0.4,
             },
-            push: {
-              particles_nb: 4,
-            },
-            remove: {
-              particles_nb: 2,
-            },
           },
         },
         particles: {
           color: {
-            value: "#e3e3e3",
+            value: "#f0f0f0",
           },
           links: {
             color: "#ffffff",
             distance: 100,
             enable: true,
-            opacity: 1,
+            opacity: 0.5,
             width: 1,
           },
           collisions: {
@@ -98,12 +101,13 @@ const Top = ({ frontmatter }) => {
             speed: 2,
             straight: false,
           },
+          reduceDuplicates: true,
           number: {
             density: {
               enable: true,
               area: 800,
             },
-            value: 100,
+            value: 80,
           },
           opacity: {
             value: 0.5,

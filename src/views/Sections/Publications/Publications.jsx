@@ -21,7 +21,7 @@ const Publications = ({ className, frontmatter }) => {
       <Row>
         <SectionHeader header={rootHeader} subheader={rootSubHeader} />
       </Row>
-      <Row>
+      <Row className="publicationRow">
         <Col lg={8} xs={12}>
           <Row className="my-5 mx-1">
             <Card style={{ height: "15rem", width: "40rem" }}>

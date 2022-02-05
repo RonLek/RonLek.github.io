@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { Container, Row, Col } from "react-bootstrap";
-import Love from "../../../content/assets/images/logos/love.png";
+import Love from "../../../content/assets/images/icons/love.png";
 
 const Footer = ({ frontmatter }) => {
   if (!frontmatter) {
