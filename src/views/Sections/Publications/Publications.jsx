@@ -143,7 +143,7 @@ const Publications = ({ className, frontmatter }) => {
           <div className="hand-hero">
             <Image
               className="mx-auto"
-              style={{ height: "25rem", width: "20rem" }}
+              style={{ height: "25rem", width: "17rem" }}
               fileName="publications/hand point cloud.png"
               alt="publications/hand point cloud.png"
             />
