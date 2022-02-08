@@ -1,8 +1,8 @@
 {
   "name": "rohan-lekhwani-gatsby-website",
-  "description": "gatsby version of website with i18n support",
+  "description": "I am a software engineer at Gojek. I love to learn new things and build cool stuff. I am an avid coder, amateur writer, and a full-time foodie. Welcome to my website.",
   "version": "0.1.0",
-  "author": "RonLek",
+  "author": "rohanlekhwani",
   "bugs": {
     "url": "https://github.com/RonLek/RonLek.github.io/issues"
   },
