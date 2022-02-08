@@ -52,12 +52,25 @@ const SEO = ({ lang, description, meta, keywords, title }) => {
           content: `website`,
         },
         {
+          property: `og:image`,
+          content:
+            "https://raw.githubusercontent.com/RonLek/RonLek.github.io/master/content/assets/images/background.png",
+        },
+        {
+          property: `og:url`,
+          content: "https://ronlek.github.io",
+        },
+        {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
           content: site.siteMetadata.author,
+        },
+        {
+          name: `twitter:site`,
+          content: `@${site.siteMetadata.author}`,
         },
         {
           name: `twitter:title`,
@@ -66,6 +79,11 @@ const SEO = ({ lang, description, meta, keywords, title }) => {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content:
+            "https://raw.githubusercontent.com/RonLek/RonLek.github.io/master/content/assets/images/background.png",
         },
       ]
         .concat(

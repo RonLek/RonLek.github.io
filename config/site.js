@@ -11,9 +11,9 @@ module.exports = {
     "eslint",
     "bootstrap",
   ],
-  description: "gatsby version of website with i18n support.",
-  author: "RonLek",
-  trackingId: "UA-119418003-5",
+  description: "Maker | Engineer | Learner",
+  author: "rohanlekhwani",
+  trackingId: "G-SFC3W96ZL1",
   defaultLang: "en",
   langTextMap: {
     en: "English",
