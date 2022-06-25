@@ -153,7 +153,6 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
         anchors={["Publications", "Projects", "Experience"]}
         frontmatter={navBarNode.frontmatter}
         extraItems={langSelectorPart}
-        resumeLink={edges ? edges[0].node.publicURL : null}
       />
       <Top frontmatter={topNode.frontmatter} />
       {
