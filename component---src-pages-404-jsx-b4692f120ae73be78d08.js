@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkrohan_lekhwani_gatsby_website=self.webpackChunkrohan_lekhwani_gatsby_website||[]).push([[415],{3729:function(e,t,n){n.r(t);var a=n(96540);t.default=function(){return a.createElement(a.Fragment,null,a.createElement("h1",null,"NOT FOUND"),a.createElement("p",null,"You just hit a route that doesn't exist... the sadness."))}}}]);
+//# sourceMappingURL=component---src-pages-404-jsx-b4692f120ae73be78d08.js.map
